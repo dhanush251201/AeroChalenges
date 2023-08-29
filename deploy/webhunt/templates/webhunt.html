@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebHunt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .symbol {
+            font-size: 36px;
+            cursor: pointer;
+            margin: 20px;
+        }
+        a{
+            opacity:1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Symbolic Web Hunt</h1>
+    <p>Follow the symbols to uncover the hidden flag:</p>
+    <div class="symbol" onclick="showClue(1)">🔍</div>
+    <div class="symbol" onclick="showClue(2)">🌟</div>
+    <div class="symbol" onclick="showClue(3)">🔑</div>
+    <div class="symbol" onclick="showFlag()">🚩</div>
+
+    <div id="clue1" style="display: none;">
+        <p>Great start! Look for the shining one.</p>
+        <div class="symbol" onclick="showClue(2)">🌟</div>
+    </div>
+
+    <div id="clue2" style="display: none;">
+        <p>You're getting closer! Use the special key.</p>
+        <div class="symbol" onclick="showClue(3)">🔑</div>
+    </div>
+
+    <div id="clue3" style="display: none;">
+        <p>Unlock the final destination.</p>
+        <div class="symbol" onclick="showFlag()">🚩</div>
+    </div>
+
+    <div id="flag" style="display: none;">
+        <h2>Congratulations!</h2>
+        <p>You're one step faraway from the flag.</p>
+        <a href='123D60DB59948C34E8AEBECBF7E8F172094DB8D40D8A9388AA8A09CAA7ED0E50'></a>
+        <p>What will this code print? </p>
+        <p>for i in range(13): </p>
+        <p>print(i)</p>
+        <p>And that's your key!</p>
+    </div>
+
+    <script>
+        function showClue(clueNumber) {
+            document.getElementById('clue' + clueNumber).style.display = 'block';
+        }
+
+        function showFlag() {
+            document.getElementById('flag').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

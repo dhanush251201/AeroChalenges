@@ -1,0 +1,10 @@
+body::after{
+    content:"RRVOFHGDONT";
+    color:white;
+    font-size:xx-small;
+}
+body::before{
+    content:"HINT: Contact me";
+    color:white;
+    font-size:xx-small;
+}

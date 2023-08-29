@@ -1,0 +1,11 @@
+body{
+    background-image:url(https://cdn.pixabay.com/photo/2016/04/30/08/35/aircraft-1362586_1280.jpg);
+    background-repeat:no-repeat;
+    background-size:100% auto;
+}
+/* You found the flag: Aerovision{Y0ur fl1gHt 15 cyb3r-53cur3} */
+h2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:48px;
+    text-align:center;
+}

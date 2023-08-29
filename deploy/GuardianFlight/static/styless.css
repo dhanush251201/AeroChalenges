@@ -1,0 +1,10 @@
+body::after{
+    content:"ASI4EII1GU";
+    color:white;
+    font-size:xx-small;
+}
+body::before{
+    content:"HINT:Find Solutions";
+    color:white;
+    font-size:xx-small;
+}
